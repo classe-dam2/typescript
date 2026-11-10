@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercici 15 - Mapes i Històric</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script type="module" src="./main.ts" defer></script>
+  <style>
+    #map { width: 100%; height: 350px; margin-top: 15px; border: 1px solid #ccc; border-radius: 6px; }
+  </style>
+</head>
+<body>
+
+<h1>Coordenades Geogràfiques</h1>
+
+<div class="form-row">
+  <label for="nom">Nom:</label>
+  <input type="text" id="nom" placeholder="Ex: IES Sabadell">
+
+  <label for="latitud">Latitud:</label>
+  <input type="number" id="latitud" step="any" placeholder="Ex: 41.55453">
+
+  <label for="longitud">Longitud:</label>
+  <input type="number" id="longitud" step="any" placeholder="Ex: 2.08253">
+
+  <button type="button" id="btnAfegir">Afegir Lloc</button>
+  <button type="button" id="btnHistoric">Mostrar Històric</button>
+</div>
+
+<p id="missatge_map"></p>
+<div id="map"></div>
+
+<h2>Històric de llocs</h2>
+<ul id="llista"></ul>
+<p id="missatge_hist"></p>
+
+</body>
+</html>
